@@ -5,10 +5,25 @@ body {
 	height: 100%;
 	font-size: 16px;
 	color: #444; 
+	width: 1280px;
 }
-input,
-button {
+:focus {
 	outline: none;
+}
+#topcontrol {
+    background: #999;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    z-index: 30;
+}
+#topcontrol i {
+	position: relative;
+    top: 3px;
+    font-size: 25px;
 }
 
 /* HEADER */
@@ -20,8 +35,6 @@ header {
 .header-carousel img {
 	position: relative;
     width: 100%;
-    height: 726px;
-    margin-right: -100%;
     z-index: 1;
 }
 .logo-nav-box {
@@ -48,32 +61,34 @@ header {
 	text-decoration: none;
 	text-transform: uppercase;
 }
-nav {
+.navbar {
+	display: inline-block;
+	float: right;
+}
+.navbar>li {
 	display: inline-block;
 	vertical-align: top;
-	width: calc(75% - 4px);
-	text-align: right;
 }
-nav a {
+.navbar>li>a {
 	color: rgba(255,255,255,.8);
 	margin-left: 42px;
-}
-nav a:hover {
-	color: #d90000;
 	transition: 0.5s;
 }
-nav a:first-of-type {
+.navbar>li>a:hover {
+	color: #d90000;
+}
+.navbar>li:first-of-type a {
 	color: #d90000;
 	font-weight: 700;
 }
-nav a:last-of-type {
+.navbar>li:last-of-type a {
 	color: #fff;
 	font-weight: 400;
 	border: 1px solid #fff;
 	border-radius: 4px;
 	padding: 8px 10px;
 }
-nav a:last-of-type:hover {
+.navbar>li:last-of-type a:hover{
 	color: #fff;
 	background-color: #d90000;
 	border: 1px solid #d90000;
@@ -82,6 +97,7 @@ nav a:last-of-type:hover {
 .logo a {
 	font-size: 24px;
 	line-height: 60px;
+	font-weight: 400;
 	color: #fff;
 }
 .logo a img {
@@ -89,6 +105,53 @@ nav a:last-of-type:hover {
 	height: 45px;
 	width: 55px;
 	margin-top: 5px;
+}
+.dropdown-menu {
+	display: none;
+	background: #141D25;
+	top: 90%;
+	right: 30%;
+	height: 184px;
+	width: 145px;
+	padding: 5px 0;
+	border-radius: 4px;
+	position: absolute;
+	text-align: left;
+}
+.dropdown-menu:before {
+	content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #141D25;
+    position: absolute;
+    right: 30px;
+    top: -10px;
+}
+.dropdown-menu li {
+	height: 37px;
+}
+.dropdown-menu li a {
+	display: block;
+	border-bottom: 1px solid #212e3a;
+	padding: 8px 20px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: capitalize;
+}
+.dropdown-menu li a:hover {
+	background: #2e4050;
+	transition: 0.4s;
+}
+.dropdown-menu li:last-of-type a {
+	border-bottom: none;
+	overflow: hidden;
+}
+.navlink-genres:hover .dropdown-menu {
+	display: block;
 }
 
 /* NAVBAR-FIXED-TOP */
@@ -102,18 +165,19 @@ nav a:last-of-type:hover {
 	width: calc(100% - 96px);
 	z-index: 100;
 }	
-.navbar-fixed-top nav a {
+.navbar-fixed-top .navbar>li>a {
 	color: #666;
 	font-weight: 400;
 }
-.navbar-fixed-top nav a:hover {
+.navbar-fixed-top .navbar>li>a:hover {
 	color: #d90000;
+	transition: 0.5s;
 }
-.navbar-fixed-top nav a:first-of-type {
+.navbar-fixed-top .navbar>li:first-of-type a {
 	color: #d90000;
 	font-weight: 700;
 }
-.navbar-fixed-top nav a:last-of-type {
+.navbar-fixed-top .navbar>li:last-of-type a {
 	color: #fff;
 	background-color: #d90000;
 	font-weight: 400;
@@ -274,11 +338,17 @@ nav a:last-of-type:hover {
 	color: #fff;
 	text-decoration: none;
 	text-align: center;
+	transition: 0.5s;
 }
 .trending-music-item a:last-of-type:hover {
 	color: #d90000;
 	text-decoration: underline;
-	transition: 0.5s;
+}
+.trending-music-item a:last-of-type:after {
+	content: "\f0ed";
+	font-family: "FontAwesome";
+	position: absolute;
+    left: 5px;
 }
 
 
@@ -335,13 +405,13 @@ nav a:last-of-type:hover {
 	font-weight: 500;
 	padding: 10px 58px;
 	margin-top: 15px;
+	transition: 0.5s;
 }
 .smm-container a:hover {
 	color: #fff;
 	font-weight: 400;
 	background-color: #d90000;
 	border: 2px solid #d90000;
-	transition: 0.5s;
 }
 
 /* TESTIMONIALS SECTION */
@@ -555,13 +625,250 @@ footer {
 }
 
 /* PLAYER */
-
-.player {
+.mejs__player {
 	margin-top: 29px;
 }
 
 
+/* INNER PAGES */
+.inner-page .logo {
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+.inner-page .logo a {
+	position: relative;
+	text-decoration: none;
+}
+.inner-page .logo a img {
+	position: absolute;
+	left: -55px;
+}
+
+/* SIGN UP PAGE */
+.upper-wrapper {
+	background: #141D25 url(../img/inner-bg.jpg) no-repeat 50% top;
+	background-size: cover;
+}
+.wrapper {
+	padding: 0 265px 50px 265px;
+}
+.wrapper-content {
+	background-color: #fff;
+	padding: 40px;
+	border-radius: 4px;
+	font-weight: 300;
+}
+.inner-title {
+	font-size: 30px;
+	line-height: 32px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.wrapper-content>p {
+	font-size: 18px;
+	line-height: 27px;
+	color: #999;
+	margin-bottom: 60px;
+	text-align: center;
+}
+.form-container {
+	display: inline-block;
+	vertical-align: top;
+	width: 262px;
+}
+.form-group {
+	position: relative;
+	margin-bottom: 15px;
+}
+.form-group:before {
+	font-family: "FontAwesome";
+	position: absolute;
+    left: 10px;
+    top: 11px;
+    color: #999;
+}
+.form-group.email:before {
+	content: "\f199";
+}
+.form-group.password:before {
+	content: "\f023";
+}
+.form-group input {
+	display: block;
+	width: calc(100% - 44px);
+	padding: 8px 12px;
+	padding-left: 30px;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 300;
+	color: #555;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	box-shadow: none;
+}
+.inner-btn {
+	width: 100%;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 20px;
+	background: #d90000;
+    border: 2px solid #d90000;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+.inner-form .note {
+	margin: 15px 0;
+	font-size: 13px;
+	line-height: 20px;
+	color: #999;
+}
+.inner-form .lead {
+	margin: 30px 0 20px 0;
+	font-size: 14px;
+	line-height: 20px;
+	color: #999;
+}
+.inner-form a {
+	color: #d90000;
+	text-decoration: none;
+}
+.inner-form a:hover {
+	text-decoration: underline;
+}
+.social-btns {
+	display: inline-block;
+	vertical-align: top;
+	width: 225px;
+	min-height: 273px;
+	margin: 0 0 15px 58px;
+	padding-left: 65px;
+	position: relative;
+}
+.divider {
+	text-align: center;
+    margin-bottom: 30px;
+    color: #999;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+.divider:before {
+	content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #e5e5e5;
+    height: 100%;
+    width: 1px;
+}
+.divider span {
+	background: #fff;
+    display: inline-block;
+    padding: 10px 0;
+    position: relative;
+    top: 80px;
+    margin-left: -10px;
+}
+.social-btns-list li {
+	margin-bottom: 10px;
+}
+.inner-btn.vk-btn {
+	background-color: #48729e;
+	border-color: #48729e;
+	text-align: left;
+}
+.inner-btn.facebook-btn {
+	background-color: #3b5998;
+	border-color: #3b5998;
+	text-align: left;
+}
+.inner-btn.twitter-btn {
+	background-color: #55acee;
+	border-color: #55acee;
+	text-align: left;
+}
+.inner-btn.google-btn {
+	background-color: #dd4b39;
+	border-color: #dd4b39;
+	text-align: left;
+}
+.inner-btn i {
+	font-size: 18px;
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
+    border-right: 1px solid rgba(0,0,0,.05);
+    padding-right: 10px;
+    width: 20px;
+}
+.social-btns p {
+	font-size: 13px;
+	line-height: 15px;
+	color: #999;
+	margin: 25px 0 15px 0;
+}
 
 
+/* LOG IN PAGE */
+.login-page .inner-title {
+	margin-bottom: 60px;
+}
+.form-group.password p {
+	font-size: 13px;
+	line-height: 20px;
+	margin: 10px 0 15px 0;
+}
+.form-group.password p a {
+	color: #999;
+	transition: .4s;
+}
+.form-group.password p a:hover {
+	color: #d90000;
+}
+.inner-form .checkbox {
+	position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.inner-form .checkbox label {
+	display: inline-block;
+	max-width: 100%;
+	min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.inner-form .checkbox label {
+	font-size: 14px;
+    color: #666;
+}
+.inner-form .checkbox input {
+	position: absolute;
+	margin-left: -20px;
+	left: 0;
+	margin: 2px 0 0;
+}
+
+
+/* SIGN UP PAGE 2 */
+.signup-page-2 .inner-title {
+	margin-bottom: 40px;
+}
+.signup-page-2 .form-container {
+	display: block;
+	margin: 0 175px;
+	width: 320px;
+}
+.form-group.user:before {
+	content: "\f007";
+}
+.form-group.location:before {
+	content: "\f124";
+}
 
 

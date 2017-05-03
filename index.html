@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -6,7 +6,6 @@
 
 	<!-- FONTS -->
 	<script src="https://use.fontawesome.com/65fd0293d1.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet'>
 
 	<!-- STYLES -->
@@ -16,10 +15,6 @@
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="shortcut icon" href="img/favicon.ico" sizes="32x32">
 	<link rel="stylesheet" href="css/style.css">
-
-
-	<!-- SCRIPTS -->
-	
 
 </head>
 <body>
@@ -39,38 +34,48 @@
 		</div> 
 		<div class="logo-nav-box">
 			<div class="logo">
-				<a href="#top">
+				<a href="index.html">
 					<img src="img/logo.png" alt="">
 					<span>Sound</span>Place
 				</a>
 			</div>
-			<nav>
-				<a href="#">Home</a>
-				<a href="#" class="navlink-genres">
-					Genres
-					<i class="fa fa-angle-down"></i>
-				<!--	   <ul class="dropdown-menu">
-							<li>
-								<a href="">Hip Hop</a>
-							</li>
-							<li>
-								<a href="">R&B</a>
-							</li>
-							<li>
-								<a href="">Pop</a>
-							</li>
-							<li>
-								<a href="">Electronic</a>
-							</li>
-							<li>
-								<a href="">Rock</a>
-							</li>
-						</ul> -->
-				</a>
-				<a href="#">Free beats</a>
-				<a href="#">Log in</a>
-				<a href="#">Sign up free</a>
-			</nav>
+			<ul class="navbar">
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li class="navlink-genres">
+					<a href="#">
+						Genres
+						<i class="fa fa-angle-down"></i>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#">Hip Hop</a>
+						</li>
+						<li>
+							<a href="#">R&amp;B</a>
+						</li>
+						<li>
+							<a href="#">Pop</a>
+						</li>
+						<li>
+							<a href="#">Electronic</a>
+						</li>
+						<li>
+							<a href="#">Rock</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Free beats</a>
+				</li>
+				<li>
+					<a href="login.php">Log in</a>
+				</li>
+				<li>
+					<a href="signup.html">Sign up free</a>
+				</li>
+			</ul>
 		</div>
 		<div class="main-title-box">
 			<h1>The social music marketplace for recording artists, songwriters, beatmakers and music producers!</h1>
@@ -84,7 +89,7 @@
 				</div>
 				<div class="upload-btn-container">
 					<span> OR </span>
-					<a href="#">
+					<a href="login.html">
 						<i class="fa fa-cloud-upload"></i>
 						Upload your own
 					</a>
@@ -93,59 +98,58 @@
 			<div class="trending-music">
 				<h3>Trending Music</h3>
 				<ul class="trending-music-list playlist">
-					<li class="trending-music-item" audiourl="Calvin Harris ft. John Newman - Blame.mp3">
+					<li class="trending-music-item" audiourl="main01.mp3">
 						<a href="">
 							<img src="img/trending-music-item-1.jpg" alt="">
 							<i></i>
 						</a>
-						<a href="">Calvin Harris</a>
+						<a href="player/sound/main01.mp3" download>Calvin Harris</a>
 					</li>
-					<li class="trending-music-item" audiourl="Imagine Dragons - Levitate.mp3">
+					<li class="trending-music-item" audiourl="main02.mp3">
 						<a href="#">
 							<img src="img/trending-music-item-2.jpg" alt="">
 							<i></i>
 						</a>
-						<a href="#">Imagine Dragons</a>
+						<a href="player/sound/main02.mp3" download>Imagine Dragons</a>
 					</li>
-					<li class="trending-music-item" audiourl="The Weekend feat. Daft Punk - Starboy (Vicetone Remix).mp3">
+					<li class="trending-music-item" audiourl="main03.mp3">
 						<a href="#">
 							<img src="img/trending-music-item-3.jpg" alt="">
 							<i></i>
 						</a>
-						<a href="#">Suicide Boys</a>
+						<a href="player/sound/main03.mp3" download>Suicide Boys</a>
 					</li>
-					<li class="trending-music-item" audiourl="Robin Schulz - Sugar (feat. Francesco Yates) 432Hz.mp3">
+					<li class="trending-music-item" audiourl="main04.mp3">
 						<a href="#">
 							<img src="img/trending-music-item-4.jpg" alt="">
 							<i></i>
 						</a>
-						<a href="#">Jonas Blue</a>
+						<a href="player/sound/main04.mp3" download>Jonas Blue</a>
 					</li>
-					<li class="trending-music-item" audiourl="Suicide Boys - Ocean Side Suicide.mp3">
+					<li class="trending-music-item" audiourl="main05.mp3">
 						<a href="#">
 							<img src="img/trending-music-item-5.jpg" alt="">
 							<i></i>
 						</a>
-						<a href="#">Justin Bieber</a>
+						<a href="player/sound/main05.mp3" download>Justin Bieber</a>
 					</li>
-					<li class="trending-music-item" audiourl="Jonas Blue - Perfect Strangers (feat. JP Cooper).mp3">
+					<li class="trending-music-item" audiourl="main06.mp3">
 						<a href="#">
 							<img src="img/trending-music-item-6.jpg" alt="">
 							<i></i>
 						</a>
-						<a href="#">The Weekend</a>
+						<a href="player/sound/main06.mp3" download>The Weekend</a>
 					</li>
-					<li class="trending-music-item" audiourl="Justin Bieber - Sorry (PURPOSE - The Movement).mp3">
+					<li class="trending-music-item" audiourl="main07.mp3">
 						<a href="#">
 							<img src="img/trending-music-item-7.jpg" alt="">
 							<i></i>
 						</a>
-						<a href="#">Robin Schulz</a>
+						<a href="player/sound/main07.mp3" download>Robin Schulz</a>
 					</li>
 				</ul>
 			</div>
 		</div>
-
 	</header>
 
 	<!-- MAIN -->
@@ -171,7 +175,7 @@
 					<strong>Follow all of your favorite musicians</strong>
 					and stay up to date with their music, videos and photos in your feed.
 				</p>
-				<a href="#">Sign up free!</a>
+				<a href="signup.html">Sign up free!</a>
 			</div>
 		</section>
 
@@ -222,64 +226,64 @@
 			</h1>
 			<ul class="verified-members-list">
 				<li class="verified-members-item">
-					<a href="#">
+					<a href="signup.html">
 						<img src="img/verified-members-item-1.jpg" alt="">
 						<span>
-							Chingy Jackpot
+							Calvin Harris
 							<i class="fa fa-check-circle"></i>
 						</span>
 					</a>
-					<a href="#">Follow</a>
+					<a href="login.html">Follow</a>
 				</li>
 				<li class="verified-members-item">
-					<a href="#">
-						<img src="img/verified-members-item-2.png" alt="">
+					<a href="signup.html">
+						<img src="img/verified-members-item-2.jpg" alt="">
 						<span>
-							vybeBeatz
+							Imagine Dragons
 							<i class="fa fa-check-circle"></i>
 						</span>
 					</a>
-					<a href="#">Follow</a>
+					<a href="login.html">Follow</a>
 				</li>
 				<li class="verified-members-item">
-					<a href="#">
+					<a href="signup.html">
 						<img src="img/verified-members-item-3.jpg" alt="">
 						<span>
-							OGE BEATS
+							Suicide Boys
 							<i class="fa fa-check-circle"></i>
 						</span>
 					</a>
-					<a href="#">Follow</a>
+					<a href="login.html">Follow</a>
 				</li>
 				<li class="verified-members-item">
-					<a href="#">
-						<img src="img/verified-members-item-4.png" alt="">
+					<a href="signup.html">
+						<img src="img/verified-members-item-4.jpg" alt="">
 						<span>
-							StunnahSezbeatz 
+							Jonas Blue
 							<i class="fa fa-check-circle"></i>
 						</span>
 					</a>
-					<a href="#">Follow</a>
+					<a href="login.html">Follow</a>
 				</li>
 				<li class="verified-members-item">
-					<a href="#">
+					<a href="signup.html">
 						<img src="img/verified-members-item-5.jpg" alt="">
 						<span>
-							TheCratez
+							Justin Bieber
 							<i class="fa fa-check-circle"></i>
 						</span>
 					</a>
-					<a href="#">Follow</a>
+					<a href="login.html">Follow</a>
 				</li>
 				<li class="verified-members-item">
-					<a href="#">
+					<a href="signup.html">
 						<img src="img/verified-members-item-6.jpg" alt="">
 						<span>
-							Young Taylor
+							Robin Schulz
 							<i class="fa fa-check-circle"></i>
 						</span>
 					</a>
-					<a href="#">Follow</a>
+					<a href="login.html">Follow</a>
 				</li>
 			</ul>
 		</section>
@@ -289,7 +293,7 @@
 			<div class="cta-container">
 				<h1>Ready to promote your Music online?</h1>
 				<h2>More than 300,000 people are using SoundPlace</h2>
-				<a href="#">Sign up free!</a>
+				<a href="signup.html">Sign up free!</a>
 			</div>
 		</section>
 
@@ -306,7 +310,6 @@
 						<li>
 							<a href="#">
 								<i class="fa fa-caret-right"></i>Who we are
-							</a>
 							</a>
 						</li>
 						<li>
@@ -359,7 +362,7 @@
 	<!-- PLAYER -->
 	<div class="mejs__player">
         <span class="mejs__offscreen">Audio Player</span>
-        <div id="mep_0" class="mejs__container mejs__container-keyboard-inactive player mejs__audio" tabindex="0" role="application" aria-label="Audio Player" style="width: 100%; height: 40px;">
+        <div id="mep_0" class="mejs__container mejs__container-keyboard-inactive player mejs__audio" tabindex="0" role="application" aria-label="Audio Player" style="width: 1280px; height: 40px;">
             <div class="mejs__controls">
                 <div class="mejs__button mejs__play play">
                     <button type="button" aria-controls="mep_0" title="Play" aria-label="Play" tabindex="0"></button>
@@ -368,7 +371,7 @@
                     <button type="button" aria-controls="mep_0" title="Pause" aria-label="Pause" tabindex="0"></button>
                 </div>
                 <div class="mejs__button mejs__prev rew">
-                    <button type="button" aria-controls="mep_0" title="Previously" aria-label="Previously" tabindex="0"></button>
+                    <button type="button" aria-controls="mep_0" title="Previously" aria-label="Previous" tabindex="0"></button>
                 </div>
                 <div class="mejs__button mejs__next fwd">
                     <button type="button" aria-controls="mep_0" title="Next" aria-label="Next" tabindex="0"></button>
@@ -380,15 +383,15 @@
             </div>
         </div>
     </div>
+    
 
 	<!-- SCRIPTS -->
-	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
-    <script type="text/javascript" src="player/mediaelementplayer.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
-	<script type="text/javascript" src="js/common.js"></script>
-
-
+	<script type="text/javascript" src="player/mediaelementplayer.js"></script>
+	<script type="text/javascript" src="js/back-to-top.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 
 </body>
 </html>
