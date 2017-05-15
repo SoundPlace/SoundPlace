@@ -18,10 +18,11 @@
     "SoundPlaceEmpty": {
       "commandName": "Project",
       "launchBrowser": true,
+      "launchUrl": "http://localhost:60471/SoundPlace/index.html",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:60471/index.html/index.html"
+      "applicationUrl": "http://localhost:60471/SoundPlace"
     }
   }
 }

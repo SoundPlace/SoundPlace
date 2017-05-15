@@ -10904,10 +10904,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SoundPlaceEmpty\\SoundPlaceEmpty\\SoundPlaceEmpty.csproj",
+      "projectUniqueName": "C:\\Users\\Туник Александр\\Source\\Repos\\SoundPlace\\SoundPlaceEmpty\\SoundPlaceEmpty\\SoundPlaceEmpty.csproj",
       "projectName": "SoundPlaceEmpty",
-      "projectPath": "D:\\SoundPlaceEmpty\\SoundPlaceEmpty\\SoundPlaceEmpty.csproj",
-      "outputPath": "D:\\SoundPlaceEmpty\\SoundPlaceEmpty\\obj\\",
+      "projectPath": "C:\\Users\\Туник Александр\\Source\\Repos\\SoundPlace\\SoundPlaceEmpty\\SoundPlaceEmpty\\SoundPlaceEmpty.csproj",
+      "outputPath": "C:\\Users\\Туник Александр\\Source\\Repos\\SoundPlace\\SoundPlaceEmpty\\SoundPlaceEmpty\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
