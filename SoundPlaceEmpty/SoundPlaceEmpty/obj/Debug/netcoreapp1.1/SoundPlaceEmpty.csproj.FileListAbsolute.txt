@@ -18,3 +18,14 @@ D:\SoundPlaceEmpty\SoundPlaceEmpty\obj\Debug\netcoreapp1.1\SoundPlaceEmpty.cspro
 D:\SoundPlaceEmpty\SoundPlaceEmpty\obj\Debug\netcoreapp1.1\SoundPlaceEmpty.AssemblyInfo.cs
 D:\SoundPlaceEmpty\SoundPlaceEmpty\obj\Debug\netcoreapp1.1\SoundPlaceEmpty.dll
 D:\SoundPlaceEmpty\SoundPlaceEmpty\obj\Debug\netcoreapp1.1\SoundPlaceEmpty.pdb
+C:\Users\Туник Александр\Source\Repos\SoundPlace\SoundPlaceEmpty\SoundPlaceEmpty\bin\Debug\netcoreapp1.1\SoundPlaceEmpty.deps.json
+C:\Users\Туник Александр\Source\Repos\SoundPlace\SoundPlaceEmpty\SoundPlaceEmpty\bin\Debug\netcoreapp1.1\SoundPlaceEmpty.runtimeconfig.json
+C:\Users\Туник Александр\Source\Repos\SoundPlace\SoundPlaceEmpty\SoundPlaceEmpty\bin\Debug\netcoreapp1.1\SoundPlaceEmpty.runtimeconfig.dev.json
+C:\Users\Туник Александр\Source\Repos\SoundPlace\SoundPlaceEmpty\SoundPlaceEmpty\bin\Debug\netcoreapp1.1\SoundPlaceEmpty.dll
+C:\Users\Туник Александр\Source\Repos\SoundPlace\SoundPlaceEmpty\SoundPlaceEmpty\bin\Debug\netcoreapp1.1\SoundPlaceEmpty.pdb
+C:\Users\Туник Александр\Source\Repos\SoundPlace\SoundPlaceEmpty\SoundPlaceEmpty\obj\Debug\netcoreapp1.1\SoundPlaceEmpty.csprojResolveAssemblyReference.cache
+C:\Users\Туник Александр\Source\Repos\SoundPlace\SoundPlaceEmpty\SoundPlaceEmpty\obj\Debug\netcoreapp1.1\SoundPlaceEmpty.Properties.Resources.resources
+C:\Users\Туник Александр\Source\Repos\SoundPlace\SoundPlaceEmpty\SoundPlaceEmpty\obj\Debug\netcoreapp1.1\SoundPlaceEmpty.csproj.GenerateResource.Cache
+C:\Users\Туник Александр\Source\Repos\SoundPlace\SoundPlaceEmpty\SoundPlaceEmpty\obj\Debug\netcoreapp1.1\SoundPlaceEmpty.AssemblyInfo.cs
+C:\Users\Туник Александр\Source\Repos\SoundPlace\SoundPlaceEmpty\SoundPlaceEmpty\obj\Debug\netcoreapp1.1\SoundPlaceEmpty.dll
+C:\Users\Туник Александр\Source\Repos\SoundPlace\SoundPlaceEmpty\SoundPlaceEmpty\obj\Debug\netcoreapp1.1\SoundPlaceEmpty.pdb
