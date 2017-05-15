@@ -1,0 +1,20 @@
+c:\users\евгений\documents\visual studio 2017\Projects\SoundPlaceEmpty\SoundPlaceEmpty\bin\Debug\netcoreapp1.1\SoundPlaceEmpty.deps.json
+c:\users\евгений\documents\visual studio 2017\Projects\SoundPlaceEmpty\SoundPlaceEmpty\bin\Debug\netcoreapp1.1\SoundPlaceEmpty.runtimeconfig.json
+c:\users\евгений\documents\visual studio 2017\Projects\SoundPlaceEmpty\SoundPlaceEmpty\bin\Debug\netcoreapp1.1\SoundPlaceEmpty.runtimeconfig.dev.json
+c:\users\евгений\documents\visual studio 2017\Projects\SoundPlaceEmpty\SoundPlaceEmpty\bin\Debug\netcoreapp1.1\SoundPlaceEmpty.dll
+c:\users\евгений\documents\visual studio 2017\Projects\SoundPlaceEmpty\SoundPlaceEmpty\obj\Debug\netcoreapp1.1\SoundPlaceEmpty.csprojResolveAssemblyReference.cache
+c:\users\евгений\documents\visual studio 2017\Projects\SoundPlaceEmpty\SoundPlaceEmpty\obj\Debug\netcoreapp1.1\SoundPlaceEmpty.AssemblyInfo.cs
+C:\Users\Евгений\Documents\Visual Studio 2017\Projects\SoundPlaceEmpty\SoundPlaceEmpty\bin\Debug\netcoreapp1.1\SoundPlaceEmpty.pdb
+C:\Users\Евгений\Documents\Visual Studio 2017\Projects\SoundPlaceEmpty\SoundPlaceEmpty\obj\Debug\netcoreapp1.1\SoundPlaceEmpty.dll
+C:\Users\Евгений\Documents\Visual Studio 2017\Projects\SoundPlaceEmpty\SoundPlaceEmpty\obj\Debug\netcoreapp1.1\SoundPlaceEmpty.pdb
+D:\SoundPlaceEmpty\SoundPlaceEmpty\bin\Debug\netcoreapp1.1\SoundPlaceEmpty.deps.json
+D:\SoundPlaceEmpty\SoundPlaceEmpty\bin\Debug\netcoreapp1.1\SoundPlaceEmpty.runtimeconfig.json
+D:\SoundPlaceEmpty\SoundPlaceEmpty\bin\Debug\netcoreapp1.1\SoundPlaceEmpty.runtimeconfig.dev.json
+D:\SoundPlaceEmpty\SoundPlaceEmpty\bin\Debug\netcoreapp1.1\SoundPlaceEmpty.dll
+D:\SoundPlaceEmpty\SoundPlaceEmpty\bin\Debug\netcoreapp1.1\SoundPlaceEmpty.pdb
+D:\SoundPlaceEmpty\SoundPlaceEmpty\obj\Debug\netcoreapp1.1\SoundPlaceEmpty.csprojResolveAssemblyReference.cache
+D:\SoundPlaceEmpty\SoundPlaceEmpty\obj\Debug\netcoreapp1.1\SoundPlaceEmpty.Properties.Resources.resources
+D:\SoundPlaceEmpty\SoundPlaceEmpty\obj\Debug\netcoreapp1.1\SoundPlaceEmpty.csproj.GenerateResource.Cache
+D:\SoundPlaceEmpty\SoundPlaceEmpty\obj\Debug\netcoreapp1.1\SoundPlaceEmpty.AssemblyInfo.cs
+D:\SoundPlaceEmpty\SoundPlaceEmpty\obj\Debug\netcoreapp1.1\SoundPlaceEmpty.dll
+D:\SoundPlaceEmpty\SoundPlaceEmpty\obj\Debug\netcoreapp1.1\SoundPlaceEmpty.pdb

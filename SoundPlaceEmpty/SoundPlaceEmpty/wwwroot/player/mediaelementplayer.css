@@ -1,0 +1,225 @@
+/* Accessibility: hide screen reader texts (and prefer "top" for RTL languages).
+Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-how/ */
+/* ============================================================================================== 
+This copyright notice must be kept untouched in the stylesheet at all times.
+The original version of this stylesheet and the associated (x)html 
+is available at http://www.script-tutorials.com/html5-audio-player-with-playlist/
+Copyright (c) Script Tutorials. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any way to fit your requirements.
+================================================================================================= */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* HTML5 Audio player with playlist styles */
+
+.hidden {
+    display: none;
+}
+.tracker {
+    background: #333333;
+    float: left;
+    height: 10px;
+    left: 20px;
+    position: relative;
+    top: 36%;
+    width: 93%;
+}
+.ui-slider-range {
+    background: #d90000;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.ui-slider-handle {
+    cursor: pointer;
+    height: 10px;
+    margin-left: -5px;
+    position: absolute;
+    top: 2px;
+    width: 10px;
+    z-index: 2;
+}
+.volume .ui-slider-handle {
+    background: url("../images/spr.png") no-repeat scroll -201px -188px rgba(0, 0, 0, 0);
+    height: 13px;
+    width: 13px;
+}
+.mejs__offscreen {
+    clip: rect(1px, 1px, 1px, 1px); /* IE8-IE11 - no support for clip-path */
+    clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.mejs__container {
+    position: fixed;
+    bottom: 0;
+    margin-top: 29px;
+    background: #000;
+    font-family: "Helvetica", Arial, serif;
+    text-align: left;
+    vertical-align: top;
+    text-indent: 0;
+    box-sizing: border-box;
+    min-width: 250px;
+}
+
+.mejs__container * {
+    box-sizing: border-box;
+}
+
+/* Hide native play button from iOS to favor plugin button */
+.mejs__container video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none;
+}
+
+.mejs__fill-container,
+.mejs__fill-container .mejs__container {
+    width: 100%;
+    height: 100%;
+}
+
+.mejs__fill-container {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    background: transparent;
+}
+
+.mejs__container:focus {
+    outline: none;
+}
+/* End: LAYERS */
+
+/* Start: CONTROL BAR */
+.mejs__controls {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 98%;
+    z-index: 1;
+}
+
+.mejs__controls:not([style*="display: none"]) {
+    background: rgba(255, 0, 0, 0.7);
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.35));
+}
+
+.mejs__button,
+.mejs__time,
+.mejs__time-rail
+.tracker{
+    float: left;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+.mejs__button > button {
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    text-decoration: none;
+    margin: 10px 6px;
+    padding: 0;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 0;
+    background: transparent url("method-draw-image.svg");
+    overflow: hidden;
+}
+
+/* :focus for accessibility */
+.mejs__button > button:focus {
+    outline: dotted 1px #999;
+}
+
+.mejs__container-keyboard-inactive a,
+.mejs__container-keyboard-inactive a:focus,
+.mejs__container-keyboard-inactive button,
+.mejs__container-keyboard-inactive button:focus,
+.mejs__container-keyboard-inactive [role=slider],
+.mejs__container-keyboard-inactive [role=slider]:focus {
+    outline: 0;
+}
+
+/* End: CONTROL BAR */
+
+/* Start: Time (Current / Duration) */
+
+/* End: Time (Current / Duration) */
+
+/* Start: Play/Pause/Stop */
+.mejs__play > button {
+    background-position: 0 0;
+}
+
+.mejs__pause > button {
+    background-position: -20px 0;
+}
+
+.mejs__replay > button {
+    background-position: -280px 0;
+}
+
+.mejs__next > button {
+    background-position: -330px 0;
+}
+
+.mejs__prev > button {
+    background-position: -360px 0;
+}
+
+/* End: Play/Pause/Stop */
+
+/* Start: Progress Bar */
+
+
+/* End: Fullscreen */
+
+/* Start: Mute/Volume */
+.mejs__mute > button {
+    background-position: -60px 0;
+}
+
+.mejs__unmute > button {
+    background-position: -40px 0;
+}
+
+.mejs__volume-button {
+    left: 20px;
+    top: -1px;
+    position: relative;
+}
+
+.mejs__volume-button > .mejs__volume-slider {
+    display: none;
+    height: 115px;
+    width: 25px;
+    background: rgba(50, 50, 50, 0.7);
+    border-radius: 0;
+    top: -115px;
+    left: 50px;
+    z-index: 1;
+    position: absolute;
+    margin: 0;
+}
+
+.mejs__volume-button:hover {
+    border-radius: 0 0 4px 4px;
+}
+
+/* End: Error */
